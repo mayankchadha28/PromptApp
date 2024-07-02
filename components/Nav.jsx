@@ -68,7 +68,7 @@ const Nav = () => {
       <div className="sm:hidden flex relative">
         {session?.user ? (
           <div className="flex">
-            {/* user Image from session TODO */}
+            
               <Image src='/assets/images/logo.svg' width={37} height={37} className="rounded-full" 
               alt="profile"
               onClick={() => settoggleDropdown((prev) => 
