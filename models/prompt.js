@@ -2,7 +2,7 @@ import mongoose,  { Schema, model, models} from "mongoose";
 
 const promptSchema= new Schema({
     creator: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: 'ObjectId',
         ref: 'User',
     },
     prompt: {
@@ -15,6 +15,6 @@ const promptSchema= new Schema({
     }
 })
 
-const Prompt = model.Prompt || model('Prompt', promptSchema)
+const Prompt = models.Prompt || model('Prompt', promptSchema)
 
 export default Prompt;
